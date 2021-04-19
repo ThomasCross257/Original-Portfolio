@@ -1,0 +1,12 @@
+Website Structure:
+    Index.html
+        Biography.html
+        Contact.html
+    Index Page:
+        Contains simple information about me and also includes an archive of my projects and what I'm working on
+    Biography:
+        More detail about myself, along with information about my skills and capabilities
+    Contact:
+        Simplest page. Will include info with my P#, email and my resume in google drive.
+
+Images
