@@ -1,0 +1,30 @@
+.body{
+    margin:5%;
+    padding:10%;
+    background: #12CBC4;
+}
+.navtag{
+    margin:5%;
+}
+body{
+    background-color: tomato;
+}
+.headerimage{
+    align-items: center;
+    background-image: url("Images/headerimage.jpg");
+    background-position:center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    width:auto;
+    height:50%;
+    padding: 100px;
+    object-fit: cover;
+    margin:5%;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
