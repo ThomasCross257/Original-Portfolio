@@ -9,9 +9,10 @@
     display: block;
     background-color: #00171F;
     background-image: url("Images/LogoHeader.png");
-    background-size:25%;
+    background-size: contain;
     background-repeat: no-repeat;
 }
+
 body{
     background-image:url("Images/40db8452.png");
     font-family: 'Roboto', sans-serif;
@@ -28,6 +29,7 @@ h3{
 p{
     color: white;
 }
+
 .navtag nav{
     text-align: right;
 }
@@ -47,4 +49,24 @@ p{
 }
 .navtag li a:hover{
     background-color: #00A7E1;    
+}
+
+.projects{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.projects ul{
+    list-style-type: none;
+}
+
+.projects li{
+    padding: 5px;
+    display: inline-flex;
+    position:relative;
+}
+.projects a{
+    max-height: 204px;
+    max-width: 363px;
 }
