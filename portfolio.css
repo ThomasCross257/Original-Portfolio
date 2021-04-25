@@ -4,7 +4,7 @@
     background: #00171F;
 }
 .navtag{
-    margin:5%;
+
     min-height: 50%;
     display: block;
     background-color: #00171F;
@@ -55,6 +55,7 @@ p{
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+    text-justify:auto;
 }
 
 .projects ul{
@@ -63,10 +64,23 @@ p{
 
 .projects li{
     padding: 5px;
-    display: inline-flex;
+    display: block;
     position:relative;
 }
 .projects a{
     max-height: 204px;
     max-width: 363px;
+}
+.projects img{
+    padding-right: 10px;
+}
+
+.projects h3{
+    text-align:unset;
+}
+.projects h4{
+    color:white;
+}
+.projectText{
+    margin: left 10%;
 }
