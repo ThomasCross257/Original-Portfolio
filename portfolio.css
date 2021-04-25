@@ -2,6 +2,8 @@
     margin:5%;
     padding:5%;
     background: #00171F;
+    border: 5px solid #00171F;
+    border-radius: 10px;
 }
 .navtag{
 
@@ -11,6 +13,8 @@
     background-image: url("Images/LogoHeader.png");
     background-size: contain;
     background-repeat: no-repeat;
+    border: 5px solid #00171F;
+    border-radius: 10px;
 }
 
 body{
@@ -83,4 +87,48 @@ p{
 }
 .projectText{
     margin: left 10%;
+}
+
+.IntroPara{
+    justify-items: auto;
+    text-align: left;
+    font-size: 1.4em;
+}
+.CurrentEvent{
+    justify-items: auto;
+    font-size: 1.4em;
+    text-align: right;
+}
+.icon{
+    display:none;
+}
+@media only screen and (max-width: 768px) {
+    .navtag{
+        overflow:hidden;
+        max-width:fit-content;
+        background-image: none;
+    }
+    .navtag #navlinks{
+        display:none;
+    }
+    .navtag a {
+        color: #00171F;
+        display: block;
+    }
+    .navtag nav{
+        text-align: center;
+    }
+    .navtag li a{
+        display:block;
+        text-decoration: none;
+        color: white;
+        padding: 46px;
+        width:50%;
+    }
+    .icon{
+        display:block;
+        position:absolute;
+    }
+}
+@media only screen and (max-width: 1024px) {
 }

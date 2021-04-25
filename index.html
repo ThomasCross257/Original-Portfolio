@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
-        <title>Homepage</title>
+        <title>Thomas Cross Portfolio: Home</title>
         <link rel="stylesheet" href="portfolio.css">
         <meta charset="utf-8">
         <link rel="icon" type="image/png" href="images/favicon.ico">
@@ -9,28 +9,46 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel='icon' href='Images\favicons\favicon-16x16.png'>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href='https://css.gg/menu-boxed.css' rel='stylesheet'>
     </head>
-
+    <script>
+        function mobileNavbar(){
+            var a = document.getElementById("navlinks");
+            var d = $(window).width();
+            if (a.style.display === "block" && d <= 768) {
+                a.style.display = "none";
+            }
+            else {
+                a.style.display = "block";
+            }
+            }
+    </script>
     <body>
+        <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="background:white;" class="gg-menu-boxed"></i></a>
         <div class="navtag">
             <nav>
+                <div id="navlinks">
                 <ul>
                     <li><a href="index.html"><h1>Home</h1></a></li>
                     <li><a href="bio.html"><h1>About</h1></a></li>
                     <li><a href="contact.html"><h1>Contact</h1></a></li>
+                    <li><a href="blog.html"><h1>Blog</h1></a></li>
                     <li><a href="https://github.com/ThomasCross257/Portfolio"><h1>Source</h1></a></li>
                 </ul>
+                </div>
             </nav>
         </div>
         <div class="body">
-        
+        <div class= "IntroPara">
         <h2>Thomas Cross</h2>
-        <h3>Aspiring Web Developer, Computer Scientist, and much more</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at commodo tellus, vel tincidunt magna. Ut vel suscipit magna, vitae condimentum nunc. Aenean molestie lorem ut eros varius, a mattis elit aliquet. Nam eu felis quis arcu facilisis volutpat. Nam vehicula nulla tellus. Nam consectetur lectus non rhoncus interdum. Praesent eget elementum purus, a euismod tellus. Nulla ultricies dolor ex, et vestibulum ex accumsan in. Integer massa purus, ultricies sit amet risus quis, placerat porta mauris. Proin turpis enim, porta ac porta vitae, posuere id ligula. In sodales leo sit amet lorem gravida eleifend. Aliquam vestibulum aliquam elit. Morbi porta odio eu justo mattis, vel convallis ligula pharetra.</p>
-        <div><h2 style="text-align:center">What am I up to now?</h2></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at commodo tellus, vel tincidunt magna. Ut vel suscipit magna, vitae condimentum nunc. Aenean molestie lorem ut eros varius, a mattis elit aliquet. Nam eu felis quis arcu facilisis volutpat. Nam vehicula nulla tellus. Nam consectetur lectus non rhoncus interdum. Praesent eget elementum purus, a euismod tellus. Nulla ultricies dolor ex, et vestibulum ex accumsan in. Integer massa purus, ultricies sit amet risus quis, placerat porta mauris. Proin turpis enim, porta ac porta vitae, posuere id ligula. In sodales leo sit amet lorem gravida eleifend. Aliquam vestibulum aliquam elit. Morbi porta odio eu justo mattis, vel convallis ligula pharetra.</p>
-        
-            <h2 style="text-align:center">Some of my old projects!</h2>
+        <h3>Aspiring Software Developer, Computer Scientist, and much more</h3>
+        <p>Computers, logic, and history, just three of my favorite things to explore and expand my horizons with. I've been developing programs and websites for nearly seven years now, accquiring skills in Python, C/C++, Assembly, HTML and CSS. If you require a developer with a hunger to learn more and to experience what you have to offer, I implore you to explore my portfolio further.</p>
+        </div>
+        <div class="CurrentEvent"><h2 style="text-align:center">What am I up to now?</h2>
+        <p>I am pleased to announce my formal transfer from Chaffey College to Cal State San Bernardino. My current goal of attaining a Bachelors in Computer Science should, by optimal estimates, take no longer than two full class semesters. If you have any interest in my skillset, I implore you to CALL NOW, to reserve my interest.</p>
+        </div>
+            <h2 style="text-align:center">Some of my old website projects!</h2>
             <div class="projects">
                 <ul>
                     <li><a href="https://thomascross257.github.io/LemonadeStand/"><img style="float:left;" src="Images/webpageshots/CollegeProject.png" width="363" height="204"></a>
