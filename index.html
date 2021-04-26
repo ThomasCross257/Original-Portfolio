@@ -10,25 +10,29 @@
         <link rel='icon' href='Images\favicons\favicon-16x16.png'>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link href='https://css.gg/menu-boxed.css' rel='stylesheet'>
+        <link href='https://css.gg/close-o.css' rel='stylesheet'>
+        <link href='https://css.gg/menu.css' rel='stylesheet'>
     </head>
     <script>
         function mobileNavbar(){
             var a = document.getElementById("navlinks");
+            var b = document.getElementsByClassName("navtag");
             var d = $(window).width();
             if (a.style.display === "block" && d <= 768) {
                 a.style.display = "none";
+                b.style.display = "none";
             }
             else {
                 a.style.display = "block";
+                b.style.display = "block";
             }
             }
     </script>
     <body>
-        <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="background:white;" class="gg-menu-boxed"></i></a>
-        <div class="navtag">
+        <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="background:white; --ggs:2;" class="gg-menu"></i></a>
+        <div class="navtag" id="navlinks">
+            <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="background:white; --ggs:2;" class="gg-close-o"></i></a>
             <nav>
-                <div id="navlinks">
                 <ul>
                     <li><a href="index.html"><h1>Home</h1></a></li>
                     <li><a href="bio.html"><h1>About</h1></a></li>
@@ -36,7 +40,6 @@
                     <li><a href="blog.html"><h1>Blog</h1></a></li>
                     <li><a href="https://github.com/ThomasCross257/Portfolio"><h1>Source</h1></a></li>
                 </ul>
-                </div>
             </nav>
         </div>
         <div class="body">
@@ -60,7 +63,7 @@
                     <h4>Developed: May 2017</h4>
                     <br>
                     <br>
-                    <li><a href="https://thomascross257.github.io/GrizzleTrend/"><img style="float:left;" img src="Images/webpageshots/HSProject1.png" width="363" height="204"></a></li>
+                    <li><a href="https://thomascross257.github.io/GrizzleTrend/"><img style="float:left;" img src="Images/webpageshots/HSProject1.png"></a></li>
                     <h3>GrizzleTrend Website</h3><p>Originally meant to be a high school project for a mock interview. Contains a basic display of charts, and a login page much like CommunityCultivationCenter's website. However, it is also non-functional as well.</p>
                     <h4>Developed: December 2016</h4>
                 </ul>
