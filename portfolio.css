@@ -101,6 +101,9 @@ p{
 .icon{
     display:none;
 }
+#phoneNum-Mobile{
+    display:none;
+}
 @media only screen and (max-width: 768px) {
     .navtag{
         display:none;
@@ -154,6 +157,13 @@ p{
         width: 182px; 
         height: 102px;
         float:none;
+    }
+
+    #phoneNum-Mobile{
+        display:block;
+    }
+    #phoneNum-Desktop{
+        display:none;
     }
 }
 @media only screen and (max-width: 1024px) {
