@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
-        <title>Thomas Cross Portfolio: About</title>
-        <link rel="stylesheet" href="portfolio.css">
-        <meta charset="utf-8">
-        <link rel="icon" type="image/png" href="images/favicon.ico">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel='icon' href='Images\favicons\favicon-16x16.png'>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link href='https://css.gg/menu-boxed.css' rel='stylesheet'>
-    </head>
+<head>
+    <title>Thomas Cross Portfolio: Home</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel='icon' href='Images\favicons\favicon-16x16.png'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='https://css.gg/close-o.css' rel='stylesheet'>
+    <link href='https://css.gg/menu.css' rel='stylesheet'>
+</head>
     <script>
         function mobileNavbar(){
             var a = document.getElementById("navlinks");
-            var d = $(window).width();
+            var b = document.getElementsByClassName("navtag");
+            var d = $(document).width();
             if (a.style.display === "block" && d <= 768) {
                 a.style.display = "none";
-            }
-            else if(d > 768){
-                a.style.display = "none";
+                b.style.display = "none";
             }
             else {
+                $(a).fadeIn();
                 a.style.display = "block";
+                b.style.display = "block";
             }
             }
     </script>
     <body>
-        <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="background:white;" class="gg-menu-boxed"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="background:white; --ggs:2;" class="gg-menu"></i></a>
         <div class="navtag" id="navlinks">
+            <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="background:white; --ggs:2;" class="gg-close-o"></i></a>
             <nav>
                 <ul>
                     <li><a href="index.html"><h1>Home</h1></a></li>
@@ -41,6 +44,12 @@
             </nav>
         </div>
         <div class="body">
-
-            <iframe src="https://docs.google.com/document/d/e/2PACX-1vSif_-bwVBh2wR0h43TzY-wbMI63flYlrgn9XEXI-TMbHzI8x2UZLvezPS1ToWyI3L-d2WvcjfC8oi9/pub?embedded=true"></iframe>
+            <h2>Who am I?</h2>
+            <img src="Images/IMG_6204.JPG" class="bioPic">
+            <p class="bioPara">As a developer, I’ve faced many different challenges throughout my career. Originally, I’d never decided on being a computer scientist, rather a lawyer. From a young age, I was captivated by computers and everything that they did. Yet, I was often left with a burning question in the back of my head: “How do they do it?”.</p>
+            <p class="bioPara">All of this remained an enigma until I took my first computer science course in 2014. Creating websites, styling them, adding interactive items, and even learning javascript to some extent captivated my interest. It wasn’t until I opened up IDLE and started using Python that I’d truly begun my journey.</p>
+            <p class="bioPara">Soon, the basis of python wasn’t enough for me, so I started studying libraries. Tkinter was an obvious first choice, and Pygame not long after. Over the next seven years, I started studying everything, from Unity and the C family, to Java and even some basic Assembly programming.</p>
+            <p class="bioPara">Inevitably, after learning all I could about the fundamentals of computer science and the inner workings of a computer, I simplified my interests. Instead, returning to where I came from, web development.</p>
+            <p class="bioPara">Since then, I’ve been working simultaneously to bridge the gap between server management and web development in my skillset, namely studying the WAMP architecture (Windows, Apache, MySQL, PHP).</p>
+            <p class="bioPara">While I have aspirations of gaining my masters in Computer Science in the future, short-term, I’m looking for employment as an intern to learn more about both web development and software development.</p>
         </div>

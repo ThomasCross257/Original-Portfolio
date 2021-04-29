@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
-        <title>Thomas Cross Portfolio: Contact</title>
-        <link rel="stylesheet" href="portfolio.css">
-        <meta charset="utf-8">
-        <link rel="icon" type="image/png" href="images/favicon.ico">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel='icon' href='Images\favicons\favicon-16x16.png'>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link href='https://css.gg/menu-boxed.css' rel='stylesheet'>
-    </head>
+<head>
+    <title>Thomas Cross Portfolio: Home</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel='icon' href='Images\favicons\favicon-16x16.png'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='https://css.gg/close-o.css' rel='stylesheet'>
+    <link href='https://css.gg/menu.css' rel='stylesheet'>
+</head>
     <script>
         function mobileNavbar(){
             var a = document.getElementById("navlinks");
+            var b = document.getElementsByClassName("navtag");
             var d = $(window).width();
             if (a.style.display === "block" && d <= 768) {
                 a.style.display = "none";
-            }
-            else if(d > 768){
-                a.style.display = "none";
+                b.style.display = "none";
             }
             else {
+                $(a).fadeIn();
                 a.style.display = "block";
+                b.style.display = "block";
             }
             }
     </script>
     <body>
-        <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="background:white;" class="gg-menu-boxed"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="background:white; --ggs:2;" class="gg-menu"></i></a>
         <div class="navtag" id="navlinks">
+            <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="background:white; --ggs:2;" class="gg-close-o"></i></a>
             <nav>
                 <ul>
                     <li><a href="index.html"><h1>Home</h1></a></li>
@@ -47,4 +50,6 @@
             <h2>Phone:</h2>
             <h3>‪<a id="phoneNum-Mobile" href="tel:626-838-2675">626-838-2675</a>‬<span id="phoneNum-Desktop">626-838-2675</span></h3>
             <h2><a id="email" href="https://www.linkedin.com/in/thomas-cross-829860132/">Linkedin</a></h2>
+            <h2>Resume:</h2>
+            <iframe width="850" height="1300" style="margin: 0 auto; display:block;" src="https://docs.google.com/document/d/e/2PACX-1vSif_-bwVBh2wR0h43TzY-wbMI63flYlrgn9XEXI-TMbHzI8x2UZLvezPS1ToWyI3L-d2WvcjfC8oi9/pub?embedded=true"></iframe>
         </div>
