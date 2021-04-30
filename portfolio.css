@@ -104,6 +104,39 @@ p{
 #phoneNum-Mobile{
     display:none;
 }
+
+.bioPic{
+    display:block; 
+    width:25%; 
+    height:25%; 
+    float:right; 
+    border-style:solid;
+    border-width: 5px;
+    border-radius: 30px;
+    border-color: #00A7E1;
+}
+
+.bioPara{
+    padding-right:20px; 
+    text-align:left; 
+    text-justify: auto;
+}
+
+.MobileLink{
+    display:none;
+}
+.ResumeInline{
+    margin: 0 auto; 
+    display:block;
+}
+
+@media only screen and (max-width: 979px){
+    .navtag{
+        background-image: url("/Images/LogoSansText.png");
+        background-size:12%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .navtag{
         display:none;
@@ -165,6 +198,38 @@ p{
     #phoneNum-Desktop{
         display:none;
     }
+    .MobileLink{
+        display:block;
+    }
+    .MobileLink a:hover{
+        color: #00A7E1;    
+    }
+    .body a:link {
+        color: #007EA7;
+        text-decoration: none;
+    }
+      
+    .body a:visited {
+        text-decoration: none;
+        color: #007EA7;
+     }
+      
+     .body a:hover {
+        text-decoration: underline;
+    }
+      
+    .body a:active {
+        text-decoration: underline;
+    }
+    .ResumeInline{
+        position: absolute; 
+        width:0; 
+        height:0; 
+        border:0;
+    }
+    .gg-notes{
+        vertical-align: center;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .projects img{
@@ -173,20 +238,22 @@ p{
         height: 153px;
         float:none;
     }
+    .MobileLink{
+        display:block;
+    }
+    .ResumeInline{
+        position: absolute; 
+        width:0; 
+        height:0; 
+        border:0;
+    }
 }
-.bioPic{
-    display:block; 
-    width:25%; 
-    height:25%; 
-    float:right; 
-    border-style:solid;
-    border-width: 5px;
-    border-radius: 30px;
-    border-color: #00A7E1;
+.gg-menu{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-
-.bioPara{
-    padding-right:20px; 
-    text-align:left; 
-    text-justify: auto;
+.gg-close-o{
+    margin-left: 10px;
+    margin-top: 20px;
 }
