@@ -13,36 +13,35 @@
     <link href='https://css.gg/close-o.css' rel='stylesheet'>
     <link href='https://css.gg/menu.css' rel='stylesheet'>
 </head>
-    <script>
-        function mobileNavbar(){
-            var a = document.getElementById("navlinks");
-            var b = document.getElementsByClassName("navtag");
-            var d = $(document).width();
-            if (a.style.display === "block" && d <= 768) {
-                a.style.display = "none";
-                b.style.display = "none";
-            }
-            else {
-                $(a).fadeIn();
-                a.style.display = "block";
-                b.style.display = "block";
-            }
-            }
-    </script>
-    <body>
-        <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="background:white; --ggs:2;" class="gg-menu"></i></a>
-        <div class="navtag" id="navlinks">
-            <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="background:white; --ggs:2;" class="gg-close-o"></i></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html"><h1>Home</h1></a></li>
-                    <li><a href="bio.html"><h1>About</h1></a></li>
-                    <li><a href="contact.html"><h1>Contact</h1></a></li>
-                    <li><a href="blog.html"><h1>Blog</h1></a></li>
-                    <li><a href="https://github.com/ThomasCross257/Portfolio"><h1>Source</h1></a></li>
-                </ul>
-            </nav>
-        </div>
+<script>
+    function mobileNavbar(){
+        var a = document.getElementById("navlinks");
+        var b = document.getElementsByClassName("navtag");
+        var d = $(window).width();
+        if (a.style.display === "block" && d <= 768) {
+            a.style.display = "none";
+            b.style.display = "none";
+        }
+        else {
+            $(a).fadeIn();
+            a.style.display = "block";
+            b.style.display = "block";
+        }
+    }
+</script>
+<body>
+    <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="text-decoration: none;color: white; --ggs:2;" class="gg-menu"></i></a>
+    <div class="navtag" id="navlinks">
+        <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="text-decoration: none;color: white; --ggs:2;" class="gg-close-o"></i></a>
+        <nav>
+            <ul>
+                <li><a href="index.html"><h1>Home</h1></a></li>
+                <li><a href="bio.html"><h1>About</h1></a></li>
+                <li><a href="contact.html"><h1>Contact</h1></a></li>
+                <li><a href="https://github.com/ThomasCross257/Portfolio"><h1>Source</h1></a></li>
+            </ul>
+        </nav>
+    </div>
         <div class="body">
             <h2>Who am I?</h2>
             <img src="Images/IMG_6204.JPG" class="bioPic">

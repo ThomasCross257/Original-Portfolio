@@ -14,43 +14,51 @@
     <link href='https://css.gg/menu.css' rel='stylesheet'>
     <link href='https://css.gg/notes.css' rel='stylesheet'>
 </head>
-    <script>
-        function mobileNavbar(){
-            var a = document.getElementById("navlinks");
-            var b = document.getElementsByClassName("navtag");
-            var d = $(window).width();
-            if (a.style.display === "block" && d <= 768) {
-                a.style.display = "none";
-                b.style.display = "none";
-            }
-            else {
-                $(a).fadeIn();
-                a.style.display = "block";
-                b.style.display = "block";
-            }
-            }
-    </script>
-    <body>
-        <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="background:white; --ggs:2;" class="gg-menu"></i></a>
-        <div class="navtag" id="navlinks">
-            <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="background:white; --ggs:2;" class="gg-close-o"></i></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html"><h1>Home</h1></a></li>
-                    <li><a href="bio.html"><h1>About</h1></a></li>
-                    <li><a href="contact.html"><h1>Contact</h1></a></li>
-                    <li><a href="blog.html"><h1>Blog</h1></a></li>
-                    <li><a href="https://github.com/ThomasCross257/Portfolio"><h1>Source</h1></a></li>
-                </ul>
-            </nav>
-        </div>
+<script>
+    function mobileNavbar(){
+        var a = document.getElementById("navlinks");
+        var b = document.getElementsByClassName("navtag");
+        var d = $(window).width();
+        if (a.style.display === "block" && d <= 768) {
+            a.style.display = "none";
+            b.style.display = "none";
+        }
+        else {
+            $(a).fadeIn();
+            a.style.display = "block";
+            b.style.display = "block";
+        }
+    }
+</script>
+<body>
+    <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="text-decoration: none;color: white; --ggs:2;" class="gg-menu"></i></a>
+    <div class="navtag" id="navlinks">
+        <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()"><i style="text-decoration: none;color: white; --ggs:2;" class="gg-close-o"></i></a>
+        <nav>
+            <ul>
+                <li><a href="index.html"><h1>Home</h1></a></li>
+                <li><a href="bio.html"><h1>About</h1></a></li>
+                <li><a href="contact.html"><h1>Contact</h1></a></li>
+                <li><a href="https://github.com/ThomasCross257/Portfolio"><h1>Source</h1></a></li>
+            </ul>
+        </nav>
+    </div>
         <div class="body">
             <h1>Main Contact Methods</h1>
-            <h2>Email:</h2>
-            <h3 style="font-size: 1em;"><a id="email" href="mailto:thomas.cross8325@protonmail.com">thomas.cross8325@protonmail.com</a></h3>
-            <h2>Phone:</h2>
-            <h3>‪<a id="phoneNum-Mobile" href="tel:626-838-2675">626-838-2675</a>‬<span id="phoneNum-Desktop">626-838-2675</span></h3>
-            <h2><a id="email" href="https://www.linkedin.com/in/thomas-cross-829860132/">Linkedin</a></h2>
+            <table border="0" style="margin-left: auto; margin-right: auto;">
+                <tr>
+                    <th class="ContactTableDesc"><h2>Email</h2></th>
+                    <td class="ContactTableContent"><h3><a id="email" href="mailto:thomas.cross8325@protonmail.com">thomas.cross8325@protonmail.com</a></h3></td>
+                </tr>
+                <tr>
+                    <th class="ContactTableDesc"><h2>Linkedin</h2></th>
+                    <td class="ContactTableContent"><h3><a id="email" href="https://www.linkedin.com/in/thomas-cross-829860132/">Click Here</a></h3></td>
+                </tr>
+                <tr>
+                    <th class="ContactTableDesc"><h2>Phone</h2></th>
+                    <td class="ContactTableContent"><h3><a id="phoneNum-Mobile" href="tel:626-838-2675">626-838-2675</a>‬<span id="phoneNum-Desktop">626-838-2675</span></h3></td>
+                </tr>
+            </table>
             <h2>Resume:</h2>
             <div align="center"><a href="https://docs.google.com/document/d/19S_wca6SXlzcqZtPWc9Ld4ziCI8kHnvzXwpBtQwg-4o/edit?usp=sharing" class="MobileLink"><i style="text-align: center; --ggs:2;" class="gg-notes"></i></a></div>
             <iframe width="850" height="1300" class="ResumeInline" src="https://docs.google.com/document/d/e/2PACX-1vSif_-bwVBh2wR0h43TzY-wbMI63flYlrgn9XEXI-TMbHzI8x2UZLvezPS1ToWyI3L-d2WvcjfC8oi9/pub?embedded=true"></iframe>

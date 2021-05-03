@@ -4,7 +4,17 @@
     background: #00171F;
     border: 5px solid #00171F;
     border-radius: 10px;
+    box-shadow: 10px 5px 5px white;
 }
+.body a:link {
+    color: white;
+    text-decoration: none;
+}
+  
+.body a:visited {
+    text-decoration: none;
+    color: white;
+ }
 .navtag{
 
     min-height: 50%;
@@ -129,10 +139,22 @@ p{
     margin: 0 auto; 
     display:block;
 }
+.HSProject1{
+    width:363; 
+    height:204;
+}
+.HSProject2{
+    width:363; 
+    height:204;
+}
+.CollegeProj{
+    width:363; 
+    height:204;
+}
 
 @media only screen and (max-width: 979px){
     .navtag{
-        background-image: url("/Images/LogoSansText.png");
+        background-image: url("Images/LogoSansText.png");
         background-size:12%;
     }
 }
@@ -187,11 +209,23 @@ p{
     }
     .projects img{
         padding-right: 10px;
-        width: 182px; 
-        height: 102px;
         float:none;
     }
-
+    .HSProject1{
+        content:url("Images/webpageshots/GrizTrendIconMobile.png");
+        width: 177px; 
+        height: 144px;
+    }
+    .HSProject2{
+        content:url("Images/webpageshots/CommunityCultivationCenterIconMobile.png");
+        width:auto; 
+        height:auto;
+    }
+    .CollegeProj{
+        content:url("Images/webpageshots/LemonadeStandIconMobile.png");
+        width: 165px; 
+        height: 151px;
+    }
     #phoneNum-Mobile{
         display:block;
     }
@@ -204,15 +238,6 @@ p{
     .MobileLink a:hover{
         color: #00A7E1;    
     }
-    .body a:link {
-        color: #007EA7;
-        text-decoration: none;
-    }
-      
-    .body a:visited {
-        text-decoration: none;
-        color: #007EA7;
-     }
       
      .body a:hover {
         text-decoration: underline;
@@ -256,4 +281,10 @@ p{
 .gg-close-o{
     margin-left: 10px;
     margin-top: 20px;
+}
+.ContactTableContent{
+    background-color: #007EA7;
+}
+.ContactTableDesc{
+    background-color: #003459;
 }
