@@ -5,6 +5,7 @@
     border: 5px solid #00171F;
     border-radius: 10px;
     box-shadow: 10px 5px 5px white;
+    padding-bottom:7%;
 }
 .body a:link {
     color: white;
@@ -140,16 +141,22 @@ p{
     display:block;
 }
 .HSProject1{
-    width:363; 
-    height:204;
+    width:363px; 
+    height:204px;
 }
 .HSProject2{
-    width:363; 
-    height:204;
+    width:363px; 
+    height:204px;
 }
 .CollegeProj{
-    width:363; 
-    height:204;
+    width:363px; 
+    height:204px;
+}
+#MobileHomeLinks{
+    display:none;
+}
+#NonMobileHomeLinks{
+    display:block;
 }
 
 @media only screen and (max-width: 979px){
@@ -212,19 +219,13 @@ p{
         float:none;
     }
     .HSProject1{
-        content:url("Images/webpageshots/GrizTrendIconMobile.png");
-        width: 177px; 
-        height: 144px;
+        display:none;
     }
     .HSProject2{
-        content:url("Images/webpageshots/CommunityCultivationCenterIconMobile.png");
-        width:auto; 
-        height:auto;
+        display:none;
     }
     .CollegeProj{
-        content:url("Images/webpageshots/LemonadeStandIconMobile.png");
-        width: 165px; 
-        height: 151px;
+        display:none;
     }
     #phoneNum-Mobile{
         display:block;
@@ -255,6 +256,14 @@ p{
     .gg-notes{
         vertical-align: center;
     }
+    #MobileHomeLinks{
+        display:block;
+        background-color: #003459;
+        padding: 10px;
+    }
+    #NonMobileHomeLinks{
+        display:none;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .projects img{
@@ -262,6 +271,21 @@ p{
         width: 273px; 
         height: 153px;
         float:none;
+    }
+    .HSProject1{
+        content:url("Images/webpageshots/GrizTrendIconMobile.png");
+        width: 177px; 
+        height: 144px;
+    }
+    .HSProject2{
+        content:url("Images/webpageshots/CommunityCultivationCenterIconMobile.png");
+        width:auto; 
+        height:auto;
+    }
+    .CollegeProj{
+        content:url("Images/webpageshots/LemonadeStandIconMobile.png");
+        width: 165px; 
+        height: 151px;
     }
     .MobileLink{
         display:block;
