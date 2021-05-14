@@ -17,7 +17,6 @@
     color: white;
  }
 .navtag{
-
     min-height: 50%;
     display: block;
     background-color: #00171F;
@@ -169,6 +168,7 @@ p{
 @media only screen and (max-width: 768px) {
     .navtag{
         display:none;
+        min-height:initial;
         max-width:fit-content;
         background-image: none;
         position:fixed;
