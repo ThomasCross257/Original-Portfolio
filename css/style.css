@@ -1,0 +1,143 @@
+.darkheader{
+    background-color: #272d44;
+}
+body{
+    margin-left: 15%;
+    margin-right: 25%;
+    background-color: #0e1019;
+    font-family: 'Jost', sans-serif;
+}
+
+body h1, h2, h3, h4, h5, h6, p{
+    color: #a6a6a7;
+}
+body a{
+    text-decoration: none;
+    color: #a6a6a7;
+}
+hr{
+    color:#7587a6;
+}
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .grid-item {
+    width: 30%;
+    margin-bottom: 2em;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-item {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-item {
+      width: 100%;
+    }
+  }
+
+.skillblock{
+    padding-left: 5%;
+}
+.green{
+background-color:#d1ff87;
+}
+.blue{
+background-color:#759ae8;
+}
+.aqua{
+background-color:#7cc7e7;
+}
+.red{
+background-color:#fb757c;
+}
+.yellow{
+background-color:#f9ee98;
+}
+.purple{
+background-color:#bb89dc;
+}
+.orange{
+    background-color:#f99b62;
+}
+.projectBracket, .projectBracket-nm{
+    display: flex;
+}
+
+.projectBracket h2{
+    padding-right: 10px;
+    margin-left: 2%;
+}
+
+#portfolioIMG{
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin-top: 5%;
+    border-radius: 3em;
+}
+
+.mobileDiv{
+    display:none;
+}
+
+.hamburger{
+    display: none;
+}
+
+.burgerURL{
+    display: none;
+}
+
+@media only screen and (max-width: 979px){
+    .profile{
+        background-image: url("https://raw.githubusercontent.com/ThomasCross257/Portfolio/main/Images/LogoSansText.png");
+        width: 200px;
+        height: 200px;
+        margin-top: 10%;
+        margin-right: 10%;
+    }
+    #sidenav{
+        display:none;
+        width: 100%;
+        padding-top: 0%;
+    }
+    #sidenav h6{
+        margin-right: 50%;
+    }
+    #pageBody{
+        display:contents;
+    }
+    .projectBracket{
+        display: inline-block;
+    }
+    .projectBracket-nm{
+        display:none;
+    }
+    .mobileDiv{
+        display: contents;
+    }
+    #portfolioIMG{
+        width: 33%;
+        height: 33%;
+        margin-right: 20%;
+    }
+    .hamburger{
+        display:contents;
+        background-color: #0e1019;
+    }
+    .hamLine{
+        width: 50px;
+        height: 5px;
+        margin-top: 10px;
+        background-color: white;
+        border-radius: 3em;
+    }
+    .burgerURL{
+        display: contents;
+    }
+}
